@@ -1,2 +1,27 @@
 server:
   port: 8585
+
+spring:
+  application:
+    name: course-catalog-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    java:
+      enabled: true
+    git:
+      enabled: true
+      mode: full
+    build:
+      enabled: true
+    env:
+      enabled: true
+
+info:
+  app:
+    name: course-catalog-service
+    description: This is a Kotlin Spring boot application
